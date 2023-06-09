@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "SikayetKutusu";
+    Layout = "~/Views/Shared/UyePage.cshtml";
+}
+<link href="~/New Project/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="~/New Project/css/uye_sayfasi.css" rel='stylesheet' type='text/css' />
+<div class="content-form">
+    <h3>Sikayet Kutusu</h3>
+    <form method="post">
+        <input type="text" placeholder="uyeId" name="uyeId" value="@ViewBag.d" required />
+
+        <textarea placeholder="Mesaj" name="Sikayet_icerik"></textarea>
+        <input type="submit" value="Gönder" />
+    </form>
+</div>
+
+
+

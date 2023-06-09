@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+#menu{
+    height:80px;
+    
+}
+#logo{
+    font-size: 30px;
+    line-height: 80px;
+    float:left;
+    text-shadow: 2px white;
+    color:#003666;
+}
+nav {
+    float:right;
+    line-height: 80px;
+}
+nav a:link{
+    text-decoration: none;
+    margin-right: 25px;
+}
+nav a:hover{
+    border-bottom: 2px solid;
+    color:#003666;
+}
+#anasayfa{
+    height:600px;
+    background-image: url("../images/newsp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#black{
+    height:600px;
+    background-color: black;
+    opacity:0.5;
+}
+#ekip{
+   
+    padding:50px;
+    height:50px;
+    text-align: center;
+}
+.sutun-sol-sag{
+    width:450px;
+    float:left;
+    padding:50px;
+    padding-left:0;
+}
+.ekipisim{
+
+    font-size: 25px;
+    margin-bottom:12px;
+}
+.ekip-icon a{
+    color:black;
+}

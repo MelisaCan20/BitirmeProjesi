@@ -1,0 +1,31 @@
+﻿@model  BitirmeProjesi.Models.Siniflar.uye
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kayıt Formu</title>
+</head>
+<body>
+    <div >
+        <form class="form-control" method="post">
+            @Html.LabelFor(x => x.Adı)
+            @Html.TextBoxFor(x => x.Adı, new { @class = "form-control" })
+            <br />
+
+            @Html.LabelFor(x => x.sifre)
+            @Html.TextBoxFor(x => x.sifre, new { @class = "form-control" })
+            <br />
+
+
+            <button class="btn btn-primary">Kayıt Ol</button>
+
+
+        </form>
+    </div>
+</body>
+</html>

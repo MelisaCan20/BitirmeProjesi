@@ -1,0 +1,11 @@
+#haber{
+    background: url(../images/haberler.png);
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+}
+#form{
+    width: 900px;;
+    text-align: center;
+    
+}

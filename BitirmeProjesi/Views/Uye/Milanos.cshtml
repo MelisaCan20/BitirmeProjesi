@@ -1,0 +1,36 @@
+﻿@using BitirmeProjesi.Models.Siniflar
+@model List<haberler>
+@{
+    ViewBag.Title = "Milanos";
+    Layout = "~/Views/Shared/_Haber.cshtml";
+}
+
+
+<div class="header">
+    <div class="container">
+
+        <!---start-top-nav---->
+        <!--/header-->
+        <div class="single">
+            <div class="container">
+                <div class="col-md-8 single-main">
+                    @foreach (var x in Model)
+                    {
+                        <div class="single-grid">
+
+                            <img src="@x.FotoUrl" alt="" />
+                            <a href="/Uye/HaberDetay/@x.ID">@x.Baslik</a>
+                            <p>
+                                @x.icerik
+                            </p>
+                        </div>
+                        <br />
+
+                    }
+
+
+
+                </div>
+
+
+

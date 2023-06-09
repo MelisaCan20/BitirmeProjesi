@@ -1,0 +1,41 @@
+﻿@using BitirmeProjesi.Models.Siniflar
+@model List<Sikayet>
+@{
+    ViewBag.Title = "SikayetListele";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Şikayet Kutusu</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>ID</th>
+        <th>Üye Adı</th>
+        <th>Şikayet</th>
+        <th>Sil</th>
+       
+        
+
+
+
+    </tr>
+
+    @foreach (var y in Model)
+    {
+        <tr>
+            <td>@y.Sikayet_id</td>
+            <td>@y.uye.Adı</td>
+            <td>@y.Sikayet_icerik</td>
+            <td><a href="/AdminPanel/SikayetSil/@y.Sikayet_id" class="btn btn-danger">sil</a></td>
+           
+
+
+        </tr>
+
+    }
+
+</table>
+
+
+

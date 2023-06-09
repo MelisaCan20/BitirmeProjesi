@@ -1,0 +1,38 @@
+﻿@using BitirmeProjesi.Models.Siniflar
+@model List<yorum>
+@{
+    ViewBag.Title = "YorumListele";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yorum Listele</h2>
+<table class="table table-bordered">
+
+    <tr>
+        <th>ID</th>
+        <th>Haber</th>
+        <th>Kullanıcı Adı</th>
+        <th>Yorumlar</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+
+
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.Haber.Baslik</td>
+            <td>@x.kullanıcıadı</td>
+            <td>@x.acıklama</td>
+            <td><a href="/AdminPanel/YorumSil/@x.ID" class="btn btn-danger">sil</a></td>
+            <td><a href="/AdminPanel/YorumBul/@x.ID" class="btn btn-warning">güncelle</a></td>
+
+        </tr>
+
+    }
+
+</table>
+

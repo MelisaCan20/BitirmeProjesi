@@ -1,0 +1,16 @@
+﻿@using BitirmeProjesi.Models.Siniflar
+@model List<admin>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_formLayout.cshtml";
+}
+
+<h2>Admin Giris</h2>
+<div>
+    @foreach (var x in Model)
+    {
+        <p>@x.sifre</p>
+    }
+</div>
+
+

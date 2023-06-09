@@ -1,0 +1,32 @@
+﻿@model BitirmeProjesi.Models.Siniflar.yorum
+@{
+    ViewBag.Title = "YorumBul";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yorum Bul</h2>
+<br />
+
+@using (Html.BeginForm("YorumGuncelle", "AdminPanel", FormMethod.Post))
+{
+    <form class="form-group" method="post">
+
+        @Html.LabelFor(x => x.ID)
+        @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+        <br />
+        @Html.LabelFor(x => x.kullanıcıadı)
+        @Html.TextBoxFor(x => x.kullanıcıadı, new { @class = "form-control", @readonly = "readonly" })
+        <br />
+        @Html.LabelFor(x => x.acıklama)
+        @Html.TextAreaFor(x => x.acıklama, new { @class = "form-control" })
+        <br />
+
+
+        <br />
+        <button class="btn btn-success">Yorum Güncelle</button>
+
+
+    </form>
+}
+
+

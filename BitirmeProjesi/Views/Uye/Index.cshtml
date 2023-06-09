@@ -1,0 +1,135 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/New Project/css/uyep.css">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">CITY NEWS</a>
+                </div>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fas fa-rss"></i>
+
+                </div>
+                <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Anasayfa</a></li>
+                        <li><a href="#haberler">HABERLER</a></li>
+                        <li><a href="/Uye/SikayetKutusu/@ViewBag.deger">ŞİKAYET KUTUSU</a></li>
+                        <li><a href="/Default/Index/">ÇIKIŞ</a></li>
+
+
+                    </ul>
+                </marquee>
+
+            </div>
+        </nav>
+
+    </header>
+
+            @Html.Action("SonHaber","Uye")
+
+    <section id="haberler">
+
+        <h3 style="text-align:center;font-size:40px;">Haberler</h3>
+
+        <div class="card">
+            <img src="~/New Project/images/amsterdam.jpg" width="100%" height="150px">
+            <div class="container">
+                <button>
+                    <a href="#" style="color:white;">
+                        Amsterdam
+
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="~/New Project/images/londra.jpeg" width="100%">
+            <div class="container">
+                <button>
+                    <a href="haber.html"
+                       style="color:white;">
+                        Londra
+
+                    </a>
+                </button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="~/New Project/images/paris.jpg" width="100%" height="200px">
+            <div class="container">
+                <button>
+                    <a href="#" style="color:white;">
+                        Paris
+
+                    </a>
+                </button>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="~/New Project/images/milano.jpg" width="100%">
+            <div class="container">
+                <button>
+                    <a href="/Uye/Milanos/" style="color:white;">
+                        Milano
+
+                    </a>
+                </button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="~/New Project/images/istanbul.jpg" width="100%" height="150px">
+            <div class="container">
+                <button>
+                    <a href="/Uye/Istanbul/" style="color:white;">
+                        İstanbul
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="~/New Project/images/roma.jpg" width="100%" height="150px">
+            <div class="container">
+                <button>
+                    <a href="/Uye/Roma/" style="color:white;">
+                        Roma
+
+                    </a>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+</body>
+</html>

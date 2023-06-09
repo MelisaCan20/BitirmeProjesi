@@ -1,0 +1,19 @@
+﻿@using BitirmeProjesi.Models.Siniflar
+@model List<yorum>
+@foreach (var x in Model)
+{
+    <ul class="comment-list">
+
+        <li>
+
+            <img src="~/New Project/images/ekip.png" class="img-responsive" alt="">
+            <div class="desc">
+                <p>@x.kullanıcıadı: @x.acıklama</p>
+            </div>
+
+        </li>
+        
+
+    </ul>
+}
+    
